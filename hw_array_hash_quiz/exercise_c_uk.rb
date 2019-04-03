@@ -26,9 +26,24 @@ united_kingdom[3] = {
   capital: "Belfast"
 }
 p united_kingdom
+puts
+puts
 # 3. Use a loop to print the names of all the countries in the UK.
-for name in united_kingdom[:name]
-  p name
+for key in united_kingdom
+  p key[:name]
 end
+puts
 
+united_kingdom.each do |key, array|
+  puts key[:name]
+end
+puts
 # 4. Use a loop to find the total population of the UK.
+for key in united_kingdom
+  p key[:population]
+end
+puts
+
+united_kingdom.each do |key, array|
+  puts key[:population]
+end
