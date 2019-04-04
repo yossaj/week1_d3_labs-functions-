@@ -15,9 +15,11 @@ stops.delete("Livingston")
 stops.delete_at(2)
 # 7. How many stops there are in the array?
 puts stops.length
-puts
+puts stops.count # can also count specific cases
+puts stops.count("Croy")
 # 8. How many ways can we return `"Falkirk High"` from the array?
 puts stops[2]
+puts stops.fetch(2)
 # 9. Reverse the positions of the stops in the array
 p stops.reverse
 puts

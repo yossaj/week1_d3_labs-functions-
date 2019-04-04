@@ -17,7 +17,7 @@ united_kingdom = [
 ]
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
-united_kingdom[2][:capital] = ("Cardiff")
+united_kingdom[1][:capital] = ("Cardiff")
 
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
 united_kingdom[3] = {
@@ -44,6 +44,10 @@ for key in united_kingdom
 end
 puts
 
+
+total = 0
 united_kingdom.each do |key, array|
-  puts key[:population]
+   total += key[:population]
 end
+
+puts total

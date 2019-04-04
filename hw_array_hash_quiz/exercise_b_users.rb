@@ -75,8 +75,20 @@ p users["Erik"][:lottery_numbers].push(7)
 # 8. Change Erik's hometown to Edinburgh
  users["Erik"][:home_town]= ("Edinburgh")
  p users["Erik"][:home_town]
+ puts
 # 9. Add a pet dog to Erik called "Fluffy"
-p users["Erik"][:pets].push({name: "Fluffy", species: "dog"},)
+users["Erik"][:pets].push({name: "Fluffy", species: "dog"},)
+puts["Erik"][:pets]
 # 10. Add another person to the users hash
-users["Jimmy"] = ("")
+users["Jimmy"] = {
+  :twitter => "jim",
+  :lottery_numbers => [12, 14, 33, 38, 9, 25],
+  :home_town => "Dunbar",
+  :pets => [
+    {
+      :name => "monty",
+      :species => "snake"
+    }
+  ]
+}
 p users
